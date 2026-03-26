@@ -1,8 +1,8 @@
 class Aic < Formula
   desc "Terminal AI CLI tool manager"
   homepage "https://github.com/xdx888999/aic"
-  license "MIT"
   version "0.1.0"
+  license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
