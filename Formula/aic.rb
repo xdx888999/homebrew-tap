@@ -5,21 +5,21 @@
 class Aic < Formula
   desc "Terminal AI CLI tool manager"
   homepage "https://github.com/xdx888999/aic"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/xdx888999/aic/releases/download/v0.1.2/aic_darwin_amd64.tar.gz"
-      sha256 "08c27c6bd2f4d24b181b4c24451c1755e4c7e6542381ad8d31c71a365328af57"
+      url "https://github.com/xdx888999/aic/releases/download/v0.1.3/aic_darwin_amd64.tar.gz"
+      sha256 "3d97da8b20f5759e22e6be36a47b07b198d148f765ccd893791fb7bd050a828d"
 
       define_method(:install) do
         bin.install "aic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/xdx888999/aic/releases/download/v0.1.2/aic_darwin_arm64.tar.gz"
-      sha256 "a0bf51105aa474e0701dbe60b9b192af6f0234c26fc159d6f95044dd3cdc7616"
+      url "https://github.com/xdx888999/aic/releases/download/v0.1.3/aic_darwin_arm64.tar.gz"
+      sha256 "24eb11eb0a7e59e113ffa9c62f37020007b692ce3d3369fac3ea93e635c757f4"
 
       define_method(:install) do
         bin.install "aic"
@@ -29,15 +29,15 @@ class Aic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xdx888999/aic/releases/download/v0.1.2/aic_linux_amd64.tar.gz"
-      sha256 "009235466e0a202d4a637e21ccb41300bf304b08a4d12542af258247dbb9b6fb"
+      url "https://github.com/xdx888999/aic/releases/download/v0.1.3/aic_linux_amd64.tar.gz"
+      sha256 "138926bf73520ddd1fcf7c3bd7d0a6f89c53ab712a8f9e996ae4b6e73120cd6e"
       define_method(:install) do
         bin.install "aic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xdx888999/aic/releases/download/v0.1.2/aic_linux_arm64.tar.gz"
-      sha256 "e855a2026c0f06b546f5bfe643497bfc66849a9164e29ffa6bb20c5ed8d3c301"
+      url "https://github.com/xdx888999/aic/releases/download/v0.1.3/aic_linux_arm64.tar.gz"
+      sha256 "9979ab73ee913a6ade5d9bcfb20dedce992988f8344c78feab887fdea0b816d1"
       define_method(:install) do
         bin.install "aic"
       end
