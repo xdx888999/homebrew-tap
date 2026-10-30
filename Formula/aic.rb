@@ -5,21 +5,21 @@
 class Aic < Formula
   desc "Terminal AI CLI tool manager"
   homepage "https://github.com/xdx888999/aic"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/xdx888999/aic/releases/download/v0.1.6/aic_darwin_amd64.tar.gz"
-      sha256 "88454272717d4c83ab8653ecf5241800a42c72e5bac9f41cfaca33731081097b"
+      url "https://github.com/xdx888999/aic/releases/download/v0.1.7/aic_darwin_amd64.tar.gz"
+      sha256 "e868778a1767c3fc680f9c0ca3a04889dba409f7c4eec7ebef9661df3bd199bc"
 
       def install
         bin.install "aic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/xdx888999/aic/releases/download/v0.1.6/aic_darwin_arm64.tar.gz"
-      sha256 "487d1fded403eb15e9bc883ccbd3dccb8920bf978939793d84fea7306af529d1"
+      url "https://github.com/xdx888999/aic/releases/download/v0.1.7/aic_darwin_arm64.tar.gz"
+      sha256 "f56c7ae6bc10d2530e808adad6d62479c42d6f74ce2048557e3d4f2b299dd758"
 
       def install
         bin.install "aic"
@@ -29,15 +29,15 @@ class Aic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xdx888999/aic/releases/download/v0.1.6/aic_linux_amd64.tar.gz"
-      sha256 "794179fdb65649fbc01cbadcea975083d4659b4a7d4f39e908d2706ed31fd238"
+      url "https://github.com/xdx888999/aic/releases/download/v0.1.7/aic_linux_amd64.tar.gz"
+      sha256 "5193b20ad94720bc0016336d65e3668486797d25540f366ca2cec116db1de3e4"
       def install
         bin.install "aic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xdx888999/aic/releases/download/v0.1.6/aic_linux_arm64.tar.gz"
-      sha256 "228d9651455fb765592cb817ccaa751b74ee8c435bb518f37833c81c34454594"
+      url "https://github.com/xdx888999/aic/releases/download/v0.1.7/aic_linux_arm64.tar.gz"
+      sha256 "8cf39c7ede7eb9c9eced7e1ec58627dccaa7a4b43dfee47bc65a7616ac747292"
       def install
         bin.install "aic"
       end
